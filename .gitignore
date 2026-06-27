@@ -23,3 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 code-review-report.md
+.claude/*
+
+# Deployment
+.env
+.env.local

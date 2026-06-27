@@ -1,4 +1,4 @@
-import { useState, type ChangeEvent, type FormEvent } from 'react'
+import { useState, type ChangeEvent } from 'react'
 import List from './components/List'
 import './App.css'
 
@@ -12,7 +12,7 @@ function App() {
   const [todo, setTodo] = useState('')
   const [list, setList] = useState<Todo[]>([])
 
-  const handleAddTodo = (e: FormEvent<HTMLFormElement>) => {
+  const handleAddTodo = (e) => {
     e.preventDefault()
 
     const value = todo.trim()
